@@ -508,9 +508,9 @@ p { margin-bottom: 1rem; }
 }
 .site-footer a:hover { color: var(--gold); }
 
-.footer-logo img { max-height: 70px; width: auto; }
+.footer-logo img { max-height: 90px; width: auto; }
 .footer-be-good { margin-top: 1.2rem; }
-.footer-be-good img { max-height: 70px; width: auto; }
+.footer-be-good img { max-height: 90px; width: auto; }
 .footer-be-good p {
   font-size: 0.8rem;
   color: rgba(255,255,255,0.55);
