@@ -6,27 +6,6 @@
 
 document.addEventListener('DOMContentLoaded', function () {
 
-  /* ── Scroll-reveal animations (fade-up / fade-in) ───────── */
-  const animatedEls = document.querySelectorAll('.fade-up, .fade-in');
-
-  if (animatedEls.length > 0) {
-    const observer = new IntersectionObserver(
-      function (entries) {
-        entries.forEach(function (entry) {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-            observer.unobserve(entry.target); // fire once
-          }
-        });
-      },
-      { threshold: 0.12 }
-    );
-
-    animatedEls.forEach(function (el) {
-      observer.observe(el);
-    });
-  }
-
   /* ── Active nav link ─────────────────────────────────────── */
   var currentPage = window.location.pathname.split('/').pop() || 'index.html';
   document.querySelectorAll('.navbar-nav .nav-link').forEach(function (link) {
