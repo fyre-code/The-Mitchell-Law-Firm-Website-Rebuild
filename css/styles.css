@@ -257,16 +257,15 @@ p { margin-bottom: 1rem; }
 
 /* ── Section: Board Certified CTA ────────────────────────── */
 .board-cert-section {
-  background-color: var(--dark);
+  background-color: var(--bg);
   padding: 70px 0;
-  color: var(--white);
 }
 .board-cert-section h2 {
-  color: var(--gold);
+  color: var(--dark);
   font-size: clamp(1.5rem, 3vw, 2.2rem);
 }
 .board-cert-section p {
-  color: rgba(255,255,255,0.85);
+  color: var(--text-light);
   font-size: 1.05rem;
 }
 .board-cert-seal {
