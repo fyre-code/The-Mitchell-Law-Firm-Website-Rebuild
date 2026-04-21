@@ -603,6 +603,26 @@ p { margin-bottom: 1rem; }
   .board-cert-seal { max-width: 130px; margin: 0 auto 1.5rem; display: block; }
 }
 
+/* ── Accident Modal Options ───────────────────────────────── */
+.accident-option {
+  display: flex;
+  align-items: center;
+  padding: 14px 16px;
+  background: var(--white);
+  border-radius: 6px;
+  color: var(--dark);
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+  border: 1px solid rgba(28,43,58,0.08);
+}
+.accident-option:hover {
+  background: var(--blue);
+  color: var(--white);
+}
+.accident-option:hover i { color: var(--white) !important; }
+
 @media (pointer: fine) {
   a[href^="tel:"] {
     pointer-events: none;
