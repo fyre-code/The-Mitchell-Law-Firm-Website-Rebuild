@@ -603,6 +603,32 @@ p { margin-bottom: 1rem; }
   .board-cert-seal { max-width: 130px; margin: 0 auto 1.5rem; display: block; }
 }
 
+/* ── Services Dropdown ────────────────────────────────────── */
+.navbar .dropdown-menu {
+  background-color: var(--dark);
+  border: 1px solid rgba(215,201,154,0.2);
+  border-radius: 4px;
+  margin-top: 0;
+  min-width: 190px;
+  padding: 6px 0;
+}
+.navbar .dropdown-item {
+  color: rgba(255,255,255,0.75);
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding: 8px 18px;
+  transition: background-color 0.2s, color 0.2s;
+}
+.navbar .dropdown-item:hover,
+.navbar .dropdown-item:focus {
+  background-color: rgba(45,137,192,0.15);
+  color: var(--gold);
+}
+.navbar .dropdown-divider { border-color: rgba(255,255,255,0.1); }
+@media (min-width: 992px) {
+  .navbar .dropdown:hover .dropdown-menu { display: block; }
+}
+
 /* ── Accident Modal Options ───────────────────────────────── */
 .accident-option {
   display: flex;
