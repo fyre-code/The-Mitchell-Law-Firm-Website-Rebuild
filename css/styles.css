@@ -40,7 +40,10 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--dark);
   line-height: 1.25;
   margin-bottom: 0.75rem;
+  text-align: center;
 }
+
+h2 { font-size: clamp(1.6rem, 3vw, 2.2rem); }
 
 a {
   color: var(--blue);
@@ -78,7 +81,10 @@ p { margin-bottom: 1rem; }
   font-size: 0.95rem;
   letter-spacing: 0.03em;
   transition: all 0.25s;
-  display: inline-block;
+  display: block;
+  width: min(300px, 100%);
+  margin: 0.75rem auto;
+  text-align: center;
   cursor: pointer;
 }
 .btn-primary-custom:hover {
@@ -99,7 +105,10 @@ p { margin-bottom: 1rem; }
   font-size: 0.95rem;
   letter-spacing: 0.03em;
   transition: all 0.25s;
-  display: inline-block;
+  display: block;
+  width: min(300px, 100%);
+  margin: 0.75rem auto;
+  text-align: center;
   cursor: pointer;
 }
 .btn-outline-custom:hover {
@@ -117,7 +126,10 @@ p { margin-bottom: 1rem; }
   font-size: 0.95rem;
   letter-spacing: 0.03em;
   transition: all 0.25s;
-  display: inline-block;
+  display: block;
+  width: min(300px, 100%);
+  margin: 0.75rem auto;
+  text-align: center;
   cursor: pointer;
 }
 .btn-gold-custom:hover {
@@ -260,13 +272,13 @@ p { margin-bottom: 1rem; }
   background-color: var(--bg);
   padding: 70px 0;
 }
-.board-cert-section h2 {
-  color: var(--dark);
-  font-size: clamp(1.5rem, 3vw, 2.2rem);
-}
 .board-cert-section p {
   color: var(--text-light);
   font-size: 1.05rem;
+}
+.board-cert-section .btn-gold-custom {
+  width: auto;
+  min-width: 280px;
 }
 .board-cert-seal {
   max-width: 220px;
@@ -280,7 +292,6 @@ p { margin-bottom: 1rem; }
 }
 .about-section h2 {
   color: var(--dark);
-  font-size: clamp(1.6rem, 3vw, 2.2rem);
 }
 .about-accent {
   display: inline-block;
@@ -325,7 +336,6 @@ p { margin-bottom: 1rem; }
   padding: 80px 0;
 }
 .faq-section h2 {
-  font-size: clamp(1.6rem, 3vw, 2.2rem);
   margin-bottom: 2rem;
 }
 .accordion-item {
@@ -375,7 +385,6 @@ p { margin-bottom: 1rem; }
 }
 .cta-banner h2 {
   color: var(--white);
-  font-size: clamp(1.5rem, 3vw, 2rem);
   margin-bottom: 0.5rem;
 }
 .cta-banner p {
@@ -389,8 +398,6 @@ p { margin-bottom: 1rem; }
   padding: 80px 0;
 }
 .results-section h2 {
-  font-size: clamp(1.8rem, 4vw, 2.6rem);
-  text-align: center;
   margin-bottom: 2.5rem;
 }
 .result-category {
@@ -596,4 +603,11 @@ p { margin-bottom: 1rem; }
   .section-pad { padding: 48px 0; }
   .hero h1 { font-size: 2rem; }
   .board-cert-seal { max-width: 130px; margin: 0 auto 1.5rem; display: block; }
+}
+
+@media (pointer: fine) {
+  a[href^="tel:"] {
+    pointer-events: none;
+    cursor: default;
+  }
 }
