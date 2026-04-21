@@ -313,6 +313,8 @@ p { margin-bottom: 1rem; }
   border-top: 4px solid var(--blue);
   box-shadow: var(--shadow);
   transition: transform 0.25s, box-shadow 0.25s;
+  display: flex;
+  flex-direction: column;
 }
 .service-card:hover {
   transform: translateY(-4px);
