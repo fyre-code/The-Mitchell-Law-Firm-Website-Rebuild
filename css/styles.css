@@ -227,8 +227,6 @@ p { margin-bottom: 1rem; }
   font-family: 'Open Sans', sans-serif;
   font-size: clamp(1rem, 2.5vw, 1.25rem);
   font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
   margin-bottom: 0.5rem;
 }
 
