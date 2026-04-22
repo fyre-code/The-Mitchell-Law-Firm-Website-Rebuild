@@ -202,10 +202,9 @@ p { margin-bottom: 1rem; }
 .hero-bg {
   position: absolute;
   inset: 0;
-  background-image: url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600&q=80');
+  background: linear-gradient(rgba(28,43,58,0.7), rgba(28,43,58,0.7)), url('https://pbrlhyansxjdndccwtau.supabase.co/storage/v1/object/public/media-public/9fb6b9b7-9705-4b4d-af39-6cdb8d5e2c3d/04a1ede8-2b39-4845-9666-cc374ced47af/1776831277469_home-hero-background.png');
   background-size: cover;
   background-position: center;
-  opacity: 0.18;
 }
 
 .hero-content {
@@ -246,7 +245,9 @@ p { margin-bottom: 1rem; }
   padding: 60px 0;
 }
 .hero-inner .hero-bg {
-  opacity: 0.12;
+  background: linear-gradient(rgba(28,43,58,0.7), rgba(28,43,58,0.7)), url('https://pbrlhyansxjdndccwtau.supabase.co/storage/v1/object/public/media-public/9fb6b9b7-9705-4b4d-af39-6cdb8d5e2c3d/root/1776831598908_hero-background-1.png');
+  background-size: cover;
+  background-position: center;
 }
 .hero-inner h1 {
   color: var(--white);
@@ -285,7 +286,9 @@ p { margin-bottom: 1rem; }
 
 /* ── Section: About Joe ───────────────────────────────────── */
 .about-section {
-  background-color: var(--bg);
+  background: linear-gradient(rgba(244,241,235,0.7), rgba(244,241,235,0.7)), url('https://pbrlhyansxjdndccwtau.supabase.co/storage/v1/object/public/media-public/9fb6b9b7-9705-4b4d-af39-6cdb8d5e2c3d/04a1ede8-2b39-4845-9666-cc374ced47af/1776831279362_home-section-2.png');
+  background-size: cover;
+  background-position: center;
   padding: 80px 0;
 }
 .about-section h2 {
@@ -353,7 +356,9 @@ p { margin-bottom: 1rem; }
 
 /* ── Section: FAQ ─────────────────────────────────────────── */
 .faq-section {
-  background-color: var(--bg);
+  background: linear-gradient(rgba(244,241,235,0.7), rgba(244,241,235,0.7)), url('https://pbrlhyansxjdndccwtau.supabase.co/storage/v1/object/public/media-public/9fb6b9b7-9705-4b4d-af39-6cdb8d5e2c3d/04a1ede8-2b39-4845-9666-cc374ced47af/1776831278384_home-section-1.png');
+  background-size: cover;
+  background-position: center;
   padding: 80px 0;
 }
 .faq-section h2 {
