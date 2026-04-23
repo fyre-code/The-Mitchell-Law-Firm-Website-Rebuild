@@ -446,7 +446,7 @@ p { margin-bottom: 1rem; }
 }
 .result-card .amount {
   font-family: 'Playfair Display', serif;
-  font-size: 1.7rem;
+  font-size: clamp(1.3rem, 5vw, 1.7rem);
   color: var(--dark);
   font-weight: 700;
   display: block;
@@ -719,6 +719,28 @@ p { margin-bottom: 1rem; }
   .section-pad { padding: 48px 0; }
   .hero h1 { font-size: 2rem; }
   .board-cert-seal { max-width: 130px; margin: 0 auto 1.5rem; display: block; }
+
+  /* Logo */
+  .navbar-brand img { height: 80px; }
+
+  /* Hero padding */
+  .hero-content { padding: 50px 0; }
+  .hero-inner { padding: 36px 0; min-height: unset; }
+
+  /* Center hero CTA buttons on service pages */
+  .hero-inner .hero-animate-3 { align-items: center !important; }
+
+  /* Board cert button */
+  .board-cert-section .btn-gold-custom { min-width: auto; width: min(300px, 100%); }
+
+  /* Step connector breathing room */
+  .step-connector { padding: 0.4rem 0; }
+}
+
+@media (max-width: 480px) {
+  .hero h1 { font-size: 1.75rem; }
+  .hero-inner h1 { font-size: 1.5rem; }
+  .section-pad { padding: 36px 0; }
 }
 
 /* ── Services Dropdown ────────────────────────────────────── */
@@ -772,4 +794,14 @@ p { margin-bottom: 1rem; }
     pointer-events: none;
     cursor: default;
   }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-animate-1, .hero-animate-2, .hero-animate-3, .hero-animate-4 {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+  .fade-up { opacity: 1; transform: none; transition: none; }
+  * { transition-duration: 0.01ms !important; }
 }
